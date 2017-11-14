@@ -1,0 +1,34 @@
+{% extends "./base.html" %}
+{% block content %}
+<div class="row new-q-header">
+	<div class="col-md-5">
+		<h1>New Question</h1>
+	</div>
+	<div class="col-md-7 error-log">
+		U miss some input field!
+	</div>
+</div>
+<div class="row new-q">
+	<div class="col-md-1"><b>Title:</b></div>
+	<div class="col-md-9">
+		<input type="text" placeholder="input question here" class="new-q-input">
+	</div>
+</div>
+<div class="row new-q">
+	<div class="col-md-1"><b>Text:</b></div>
+	<div class="col-md-9">
+		<textarea placeholder="input text here" id="answer-aria"></textarea>
+	</div>
+</div>
+<div class="row new-q">
+	<div class="col-md-1"><b>Tags:</b></div>
+	<div class="col-md-9">
+		<input type="text" placeholder="input tags here" class="new-q-input">
+	</div>
+</div>
+<div class="row new-q">
+	<div class="col-md-2">
+		<input type="button" value="Asq question">
+	</div>
+</div>
+{% endblock %}

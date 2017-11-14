@@ -1,0 +1,15 @@
+{% extends "./base.html" %}
+{% block content %}
+	{% include "./ask.html" %}
+	<hr>
+	{% for answer in answers %}
+		{% include "./answer.html" %}
+	{% endfor %}
+	<hr>
+	<div class="row">
+		<textarea id="answer-aria" placeholder="Input answer"></textarea>
+	</div>
+	<div class="row">
+		<input type="button" value="send">
+	</div>
+{% endblock %}

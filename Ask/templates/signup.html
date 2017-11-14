@@ -1,0 +1,64 @@
+{% extends "./base.html" %}
+{% block content %}
+
+<div class="row new-q-header">
+	<div class="col-md-4">
+		<h1>Registration</h1>
+	</div>
+	<div class="col-md-7 error-log">
+		U miss some input field!
+	</div>
+</div>
+<form>
+<div class="row">
+	<div class="col-md-6">
+		<div class="form-group row">
+  			<label for="inputEmail3" class="col-md-3 col-form-label signup-filds control-label">Login</label>
+  			<div class="col-md-9">
+   				 <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+ 			 </div>
+		</div>
+	<div class="form-group row">
+  <label for="example-text-input" class="col-md-3 col-form-label signup-filds">Nick</label>
+  <div class="col-md-9">
+    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-email-input" class="col-md-3 col-form-label signup-filds">Email</label>
+  <div class="col-md-9">
+    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-password-input" class="col-md-3 col-form-label signup-filds">Password</label>
+  <div class="col-md-9">
+    <input class="form-control" type="password" value="hunter2" id="example-password-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-password-input" class="col-md-3 col-form-label">Repeat password</label>
+  <div class="col-md-9">
+    <input class="form-control" type="password" value="hunter2" id="example-password-input">
+  </div>
+</div>
+	</div>
+	<div class="col-md-6">
+		<div class="form-group">
+		    <label for="exampleInputFile">Avatar</label>
+		    <input type="file" id="exampleInputFile">
+		    <p class="help-block">Example block-level help text here.</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{% endblock %}
